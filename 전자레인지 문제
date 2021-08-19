@@ -1,0 +1,27 @@
+a=int(input())
+b,d,e,f,g,h,i=0,0,0,0,0,0,0
+if a%10!=0:
+    print(-1)
+    
+else:
+    if a>=300:
+        
+        d=a//300
+        e=a%300
+        
+        f=e//60
+        g=e%60
+        
+        h=g//10
+        i=g%10
+    elif a>=60:
+        
+        f=a//60
+        g=a%60
+        
+        h=g//10
+        i=g%10   
+    else:
+        h=a//10
+        i=a%10
+    print(d,f,h)
